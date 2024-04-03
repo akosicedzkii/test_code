@@ -15,8 +15,8 @@ jobs:
       - name: Upload to code artifact
         uses: actions/upload-artifact@v2
         with: 
-          name: .
-          path: downloads
+          name: my-artifact
+          path: test_path/
       - name: Run Trivy in GitHub SBOM mode and submit results to Dependency Graph
         uses: aquasecurity/trivy-action@master
         with:
